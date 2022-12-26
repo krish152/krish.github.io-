@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krushna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03e3c92139.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">  
+    <div class="container">
+        
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> </p>
+                <h1>Hi, I am<span> krushna</span><br>from maharashtra</h1>
+            </div>
+        </div>
+    </div>
+    
+ <!-------------------ABOUT-------------->
+ <div class="con">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/krish2.jpg">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About me</h1>
+                   
+                <p>Machine Learning is the field of study that gives computers the capability to lea
+                    rn without being explicitly programmed. ML is one of the most exciting technologie
+                    s that one would have ever come across. As it is evident from the name, it gives t
+                    he computer that makes it more similar to humans: The ability to learn. Machine l
+                    earning is actively being used today, perhaps in many more places than one
+                    would expect.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                            </div>
+                                <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        
+                            <li><span> C++</span><br><br></li>
+                            <li><span> JAVA </span><br><br></li>
+                            <li><span> HTML CSS JAVASCRIPT</span><br><br></li>
+                            <li><span> NODEJS MONGODB MYSQL</span><br><br></li>
+                            <li><span>WEB DEVELOPMENT</span><br><BR></li>
+                            <li><span> ANDROID APP DEVELOPMENT</span><br><br></li>
+                        </ul>
+                            
+                      </div>
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                        
+                            <li><span>FRONTEND DEVELOPER</span><br><BR><H5>COLLEGE RANKER (4TH JULY-5TH AUG)
+                                
+                            </H5><br></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        
+                            <li><span>BSC COMPUTER SCIENCE</span><br><br><H5>RAJARSHI SHAU MAHAVIDYALAYA 
+                            LATUR <BR><BR> GRADUATE IN <B>(2024)</B></H5></li>
+                          
+                        </ul>
+                
+                
+                    </div>
+                </div>
+           </div>
+    </div>
+
+</div>
+<!--------------------SERVICES-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My services</h1>
+        <div class="services-list">
+<div>
+    <i class="fa-solid fa-code"></i>
+    <h2>DEVELOPING WEBSITES</h2>
+    <P>ANY TYPE OF WEBSITE WILL HAVE CREATED AND IMPLEMENTATED TIME TO TIME
+     AS PER REQURMENT </P><br><a href="#">Learn more</a>
+</div>
+<div>
+    <i class="fa-brands fa-android"></i>
+    <h2>ANDROID APP DEVELOPMENT</h2>
+    <P> ANDROID APPS ARE DEVELOPED AND MAINTAINCE TIME TO TIME
+     AS PER REQURMENT </P><br><a href="#">Learn more</a>
+</div>
+<div>
+<i class="fa-solid fa-computer"></i>
+    <h2>BASIC COMPUTER SERVICES</h2>
+    <P> BASIC PROBLES HAPPENS IN COMPUTERS WILL BE SOLVED  AND CHANGES
+     AS PER REQURMENT </P><br><a href="#">Learn more</a>
+</div>
+
+        </div>
+    </div>
+</div>
+<!---------------PORTFOLIO------------->
+<!---------contact--------------------->
+<div id="contact">
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>kbhokare321@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9156842659</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+               
+                </div><br><br>
+            
+            <a href="images/resume.pdf" download class="btn btn2">DOWNLOAD CV</a><br><br>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" onclick="hello()" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div></div>
+    <div class="tnx">
+        <P>Thank you for visiting....!</P>
+    </div>
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+function hello() {
+    window.alert("submitted successfuly")
+
+}
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpLXkZ380wHAeZEiuMgc2enWVAho4V0z7oAvvvgJOmh66f93_eHfrK88fjEWJYjcR5/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+</body>
+</html>
