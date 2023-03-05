@@ -9,11 +9,12 @@
     <script src="https://kit.fontawesome.com/03e3c92139.js" crossorigin="anonymous"></script> 
 </head>
 <body>
+    <!---------------------------------HEADER--------------------------------------------------->
 <div id="header">  
     <div class="container">
         
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="logo.png" class="logo">
                 <ul>
         <li><a href="#header">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -28,23 +29,14 @@
         </div>
     </div>
     
- <!-------------------ABOUT-------------->
+ <!--------------------------------------ABOUT---------------------------------------------------------->
  <div class="con">
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/krish2.jpg">
-                </div>
                 <div class="about-col-2">
-                   <h1 class="sub-title">About me</h1>
-            <p><pre>
-My name is krushna bharat bhokare.
-I am basically from Latur.
-I had done my 12th from mbcl and currently pursuing bsc honours
-specialization in computer science at Rajarshi shahu mahavidyalaya Latur. 
-Graduated in 2024. I am willing to work with new technologies.</pre></p>  
-              
+                    <h1 class="sub-title">ABOUT ME</h1>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
                         <p class="tab-links " onclick="opentab('experience')">experience</p>
@@ -52,20 +44,23 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
                             </div>
                                 <div class="tab-contents active-tab" id="skills">
                         <ul>
-                        
-                            <li><span> C++</span><br><br></li>
+                            <li><span> C & C++</span><br><br></li>
                             <li><span> JAVA </span><br><br></li>
                             <li><span> HTML CSS JAVASCRIPT</span><br><br></li>
-                            <li><span> NODEJS MONGODB MYSQL</span><br><br></li>
+                            <li><span>PHP MYSQL</span><br><br></li>
                             <li><span>WEB DEVELOPMENT</span><br><BR></li>
                             <li><span> ANDROID APP DEVELOPMENT</span><br><br></li>
                         </ul>
-                            
+                                </div>
                       </div>
                     <div class="tab-contents"  id="experience">
                         <ul>
                         
-                            <li><span>FRONTEND DEVELOPER</span><br><BR><H5>COLLEGE RANKER (4TH JULY-5TH AUG)
+                            <li><span>FRONTEND DEVELOPMENT</span><br><BR><H5>INFOBITE TECHNOLOGY (01-12-2022 TO 01-01-2023)
+                                
+                            </H5><br></li>
+                            
+                            <li><span>FRONTEND DEVELOPMENT</span><br><BR><H5>COLLEGE RANKER (04-07-2022 TO 05-08-2022)
                                 
                             </H5><br></li>
                           
@@ -75,7 +70,7 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
                         <ul>
                         
                             <li><span>BSC COMPUTER SCIENCE</span><br><br><H5>RAJARSHI SHAU MAHAVIDYALAYA 
-                            LATUR <BR><BR> GRADUATE IN <B>(2024)</B></H5></li>
+                            LATUR <BR><BR>CURRENTLY IN 2ND YEAR (CGPA:8.40)<BR><BR> GRADUATE IN THE YEAR <B>(2024)</B></H5></li>
                           
                         </ul>
                 
@@ -86,7 +81,7 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
     </div>
 
 </div>
-<!--------------------SERVICES-------->
+<!---------------------------------SERVICES-------------------------------------------------------->
 <div id="services">
     <div class="container">
         <h1 class="sub-title"> My services</h1>
@@ -113,8 +108,7 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
         </div>
     </div>
 </div>
-<!---------------PORTFOLIO------------->
-<!---------contact--------------------->
+<!------------------------------------------contact---------------------=========================---->
 <div id="contact">
 <div class="contact">
     <div class="container">
@@ -130,11 +124,12 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
                
                 </div><br><br>
             
-            <a href="images/resume.pdf" download class="btn btn2">DOWNLOAD CV</a><br><br>
+            <a href="" download class="btn btn2">DOWNLOAD CV</a><br><br>
 
-            </div>
+            </div>-
+<!----------------------------------------------DROP MESAGE--------------------------------------->
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -149,7 +144,7 @@ Graduated in 2024. I am willing to work with new technologies.</pre></p>
         <P>Thank you for visiting....!</P>
     </div>
 
-
+<!----------------------------------------------SCRIPT----------------------------------------------------->
 
 
 <script>
@@ -174,16 +169,6 @@ function hello() {
 }
 </script>
 
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpLXkZ380wHAeZEiuMgc2enWVAho4V0z7oAvvvgJOmh66f93_eHfrK88fjEWJYjcR5/exec'
-    const form = document.forms['submit-to-google-sheet']
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> 
 </body>
 </html>
