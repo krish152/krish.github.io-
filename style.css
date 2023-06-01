@@ -20,6 +20,7 @@ body
     height: 100vh;
     background-image: url(images/krish.jpg);
     background-size: cover;
+    padding: 5px 0%;
     background-position: center;
 }
 .container
@@ -271,6 +272,10 @@ form .btn2 {
     padding: 10px 5%;
 }
 /*------css for small screen---*/
- @media only screen and(max-width: 600px){
+ @media (max-width: 600px){
+    .dis{
+       display: none;
+    }
+  
     
  }
