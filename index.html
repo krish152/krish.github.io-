@@ -9,12 +9,12 @@
     <script src="https://kit.fontawesome.com/03e3c92139.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <!---------------------------------HEADER--------------------------------------------------->
+    <!---------------------------------HEADER------------------------------------------------------->
 <div id="header">  
     <div class="container">
         
             <nav>
-    
+                
                 <ul>
         <li><a href="#header">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -24,7 +24,7 @@
             </nav>
             <div class="header-text">
                 <p> </p>
-               <div class="dis">
+                <div class="dis">
                 <h1>Hi, I am<span> krushna</span><br>from maharashtra</h1>
             </div>
             </div>
@@ -32,7 +32,7 @@
     </div>
     
  <!--------------------------------------ABOUT---------------------------------------------------------->
-<div class="con">
+ <div class="con">
 <div id="about">
     <div class="container">
         <div class="row">
@@ -46,9 +46,12 @@
                             </div>
                                 <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span> C & C++ & JAVA</span><br><br></li>
+                            <li><span> C & C++</span><br><br></li>
+                            <li><span> JAVA </span><br><br></li>
                             <li><span> HTML CSS JAVASCRIPT</span><br><br></li>
-                            <li><span> REACTJS NODEJS MYSQL SQL</span><br><br></li>
+                            <li><span>PHP MYSQL</span><br><br></li>
+                            <li><span>WEB DEVELOPMENT</span><br><BR></li>
+                            <li><span> ANDROID APP DEVELOPMENT</span><br><br></li>
                         </ul>
                                 </div>
                       </div>
@@ -123,13 +126,13 @@
                
                 </div><br><br>
             
-            <a href="images/krushna_bhokare.docx" download class="btn btn2">DOWNLOAD CV</a><br><br>
+            <a href="images/Krushna_Bhokare.docx" download class="btn btn2">DOWNLOAD CV</a><br><br>
 
             </div>
 <!----------------------------------------------DROP MESAGE--------------------------------------->
             <div class="contact-right">
                 <form>
-                    <input type="text" name="Name" id="name"placeholder="Your Name" required>
+                    <input type="text" name="Name" id="name" placeholder="Your Name" required>
                     <input type="email" name="Email" id="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" onclick="hello()" class="btn btn2">Submit</button>
@@ -165,7 +168,7 @@
 function hello() {
     let name=document.getElementById("name").value;
     let email=document.getElementById("email").value;
-    if(name=="" && email=="")
+    if(name=="" || email=="")
     {
         window.alert("Fill the all fields");
     }
